@@ -1,0 +1,26 @@
+diff --git a/porth.porth b/porth.porth
+index 22e2e21..5000ba8 100644
+--- a/porth.porth
++++ b/porth.porth
+@@ -283,7 +283,7 @@ in
+             count inc64
+             true
+           else dup @Str.data @8 'r' = if*
+-            '\r' strbuf-append-char
++            13 strbuf-append-char
+             dup str-chop-one-left
+             count inc64
+             true
+diff --git a/std/std.porth b/std/std.porth
+index 082e4d2..e4d55ad 100644
+--- a/std/std.porth
++++ b/std/std.porth
+@@ -568,7 +568,7 @@ end
+ proc ?space int -- bool in
+        dup ' '  = if  true
+   else dup '\n' = if* true
+-  else dup '\r' = if* true
++  else dup 13 = if* true
+   else false end
+   swap drop
+ end

@@ -1,0 +1,20 @@
+* Porth Bootstrap
+
+Nix-based infrastructure to bootstrap [[https://gitlab.com/tsoding/porth][porth]] compiler without using provided precompiled binary artifacts.
+
+** Usage
+
+*** In dev shell
+
+#+begin_src console
+  $ nix develop
+  $ porth com my-porth-file.porth
+#+end_src
+
+*** Building compiler
+
+#+begin_src console
+  $ nix build
+#+end_src
+
+The compiler will be in =./result/bin/porth=.

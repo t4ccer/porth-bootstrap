@@ -1,0 +1,11 @@
+diff --git a/porth.porth b/porth.porth
+index b233299..afb5534 100644
+--- a/porth.porth
++++ b/porth.porth
+@@ -4288,3 +4288,5 @@ proc main in
+     1 exit
+   end
+ end
++
++main
+\ No newline at end of file
